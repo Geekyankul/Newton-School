@@ -1,0 +1,399 @@
+what is utf-8 and why we write utf-8 in html header file ?
+https://blog.hubspot.com/website/what-is-utf-8
+https://deliciousbrains.com/how-unicode-works/
+https://unicode.org/emoji/charts/full-emoji-list.html
+
+Difference between async and defeer ?
+///Asynchronous///                                                                                                   ///Deferred///
+Asynchronous blocks the parsing of the page.	                                                          Deferred never block the page.
+Asynchronous scripts don’t wait for each other.
+So if a smaller script is second in the order, 
+it will be loaded before the previous longer one.	                                                   Deferred scripts maintain their relative order which means the first script will be loaded first while all other below it will have to wait.
+The execution of scripts begins by pause parsing.	                                                   However, the execution of scripts begins only after parsing is completely finished but before the documents’s DOMContentLoadedevent.
+
+
+what is closure ? how and why you would use one ?
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
+In other words, a closure gives you access to an outer function's scope from an inner function.what is closure ? how and why you would use one ?
+
+difference between for each and map ?
+The main difference between map and forEach is that the map method returns a new array by applying the callback function on each element of an array,
+while the forEach method doesn't return anything. You can use the forEach method to mutate the source array, but this isn't really the way it's meant to be used
+
+what is the typical use case of anonymous function ?
+An anonymous function is not accessible after its initial creation, it can only be accessed by a variable it is stored in as a function as a value. 3. This function is useful for all scenarios. An anonymous function can be useful for creating IIFE(Immediately Invoked Function Expression)
+
+advantages of collapsing whitespace ?
+Collapsing white spaces decreases the transmission time between the server and the client because collapsing features remove unnecessary bytes that are occupied by the white spaces. By mistake, if you leave extra white space, the browser will ignore it and display the UI perfectly
+
+Responsive vs Adaptive Website Design ?
+Put simply, responsive is fluid and adapts to the size of the screen no matter what the target xdevice. Responsive uses CSS media queries to change styles based on the target device such as display type, width, height, etc., and only one of these is necessary for the responsive website to adapt to different screen sizes.
+
+Adaptive design, on the other hand, uses static layouts based on breakpoints that don’t respond once they’re initially loaded.
+
+what is opacity in css?
+The opacity-level describes the transparency-level, where 1 is not transparent at all, 0.5 is 50% see-through, and 0 is completely transparent
+
+what is translate() in css ?
+The translate() CSS function repositions an element in the horizontal and/or vertical directions. Its result is a <transform-function> data type.
+
+difference between <i> and <em> tag in html ?
+The main difference between these two tag is that the <em> tag semantically emphasizes on the important word or section of words while <i> tag is just offset text conventionally styled in italic to show alternative mood or voice
+
+### what is calc() in html ?
+The calc() CSS function lets you perform calculations when specifying CSS property values. It can be used anywhere a <length>, <frequency>, <angle>, <time>, <percentage>, <number>, or <integer> is allowed.
+ex:-  width: calc(2em * 5);
+
+
+The web storage is more secure and large amounts of data can be stored locally on the client-side web browser. All the data is stored in key-value pairs. 
+
+In HTML5 there are two types of web storage API.
+
+localStorage
+SessionStorage
+localStorage: It is used to store data on the client-side. It has no expiration time, so the data in the LocalStorage exists always till the user manually deletes it.
+Syntax:
+For storing data in web storage: The key and value both should be string or number;
+
+how do i restore the default value of a property?
+In short, there's no easy way to restore to default values to whatever a browser uses . The closest option is to use the 'initial' property value, which will restore it to the default CSS values, rather than the browser's default style
+
+What is CSS preprocessor Sass?
+A CSS preprocessor is a scripting language that extends CSS by allowing developers to write code in one language and then compile it into CSS. Sass is perhaps the most popular preprocessor around right now, but other well-known examples include Less and Stylus
+
+how can be the gap under the image removed ?
+trick 1:    The most commonly used solution is used to change the display property of the <img> tag inside the <div> container from default 'inline' value to 'block' using display : block property.
+trick 2 :   vertical-align: bottom; or we can do
+trick 3:    line-height: 0%;  we can use ony one of this trick
+
+
+### what attribute we use when we want to open a link on another page ?
+The target attribute set to _blank, which tells the browser to open the link in a new tab/window, depending on the browser's settings
+The rel attribute set to noreferrer noopener to prevent possible malicious attacks from the pages you link to
+
+What is the advantage of grouping several checkboxes together?
+An inline frame (iframe) is a HTML element that loads another HTML page within the document. It essentially puts another webpage within the parent page. They are commonly used for advertisements, embedded videos, web analytics and interactive content. 
+
+what are iframe ?
+An inline frame (iframe) is a HTML element that loads another HTML page within the document.
+It essentially puts another webpage within the parent page. They are commonly used for advertisements, embedded videos, web analytics and interactive content.
+
+### what are html Attributes ?
+All HTML elements can have attributes
+Attributes provide additional information about elements
+Attributes are always specified in the start tag
+Attributes usually come in name/value pairs like: name="value"
+
+### What are entities inn html ?
+An HTML entity is a piece of text ("string") that begins with an ampersand (&) and ends with a semicolon (;) . Entities are frequently used to display reserved characte    e be interpreted as HTML code), and invisible characters (like non-breaking spaces). 
+Some special characters are reserved for use in HTML, meaning that your browser will parse them as HTML code. For example, if you use the less-than (<) sign, the browser interprets any text that follows as a tag.
+To display these characters as text, replace them with their corresponding character entities, as shown in the following table.
+
+&	&amp;	Interpreted as the beginning of an entity or character reference.
+<	&lt;	Interpreted as the beginning of a tag
+>	&gt;	Interpreted as the ending of a tag
+"	&quot;	Interpreted as the beginning and end of an attribute's value.
+
+### What are the limitatu=ions of css ?
+- css cannot perform logical operation like if else ,do while etc
+- we cannot read any file using css.
+- it cannot interact with database
+- css cannot request a webpage
+
+### what is void tag in html ?
+Most html elements have a start tag and an end tag that indicate where the element begins and where it ends .
+There is a group of elements that are exeptions to the rules the lements are called void and only have a start tag since they cannot contain any content
+
+### Who and why maintain web standards ?
+The W3C is the best known web standards body,
+WHATWG (who maintain the living standards for the HTML language),
+ECMA (who publish the standard for ECMAScript, which JavaScript is based on),
+Khronos (who publish technologies for 3D graphics, such as WebGL), 
+and others.
+
+### what is box-sizing border box do ?
+
+
+what is don't break the web ?
+
+the idea is that any new web technology that is introduced should be backwards compatible
+with what went before it (i.e. old web sites will still continue to work), and forwards
+compatible (future technologies in turn will be compatible with what we currently have).
+As you go through the learning material presented here, you'll start to learn how this 
+is made possible with some very clever design and implementation work.
+
+what is world wide web ?
+
+The World Wide Web (WWW) is combination of all resources and users on the Internet that
+are using the Hypertext Transfer Protocol (HTTP).
+
+Who manages the World Wide Web?
+
+The World Wide Web Consortium (W3C) is an international community where Member organizations,
+a full-time staff, and the public work together to develop Web standards.
+Led by Web inventor and Director Tim Berners-Lee and CEO Jeffrey Jaffe,
+W3C's mission is to lead the Web to its full potential.
+
+what happen if we miss docktype ?
+
+The browser enters Quirks mode and tries to deal with your code as if it was written in the late 90’s.
+This means they will imitate many bugs that existed in the old browsers.
+It is not consistent on how to do this (so you will get significantly different results,for example,
+from Firefox to Internet Explorer). The purpose of DOCTYPE is to tell the browser what type of HTML you are writing.
+It is not valid to omit the DOCTYPE. There is no “Standard” format. The browser will just try to parse HTML as best it can.
+But not all elements will be displayed correctly. DOCTYPE is a required part of all HTML documents.
+In HTML5 the tag used is: <! DOCTYPE html>
+
+
+What happen when you hit url in browser ?
+https://www.freecodecamp.org/news/what-happens-when-you-hit-url-in-your-browser/
+
+What are the different types of DNS server?
+All DNS servers fall into one of four categories: Recursive resolvers, root nameservers, TLD nameservers,
+and authoritative nameservers. In a typical DNS lookup (when there is no caching in play),
+these four DNS servers work together in harmony to complete the task of delivering the IP address for a 
+specified domain to the client (the client is usually a stub resolver - a simple resolver built into an operating system).
+
+https://www.cloudflare.com/en-in/learning/dns/dns-server-types/
+
+Do I Really Need “WWW” in My URL?
+https://hover.blog/do-i-need-www-in-my-url/
+
+All about dns ?
+https://www.cloudflare.com/en-in/learning/dns/what-is-dns/
+
+how to change compiter dns address ?
+https://www.computerhope.com/issues/ch001161.htm
+
+what is dns resolver ?
+https://www.computerhope.com/jargon/d/dns-resolver.htm
+
+features of html5 ?
+-video and audio
+-nav
+-header and footer
+-canvas
+input tags -- contenteditable attribute
+           -- progress tag
+-section
+-main
+-figure and figcaption
+-Placeholder
+-required attrbute
+
+What are HTML attributes?
+HTML attributes are a modifier of an HTML element type. An attribute either modifies the default functionality of
+an element type or provides functionality to certain element types unable to function correctly without them.
+In HTML syntax, an attribute is added to an HTML start tag.
+	   
+What is the Datalist element?
+The <datalist> HTML element contains a set of <option> elements that represent the permissible or recommended
+options available to choose from within other controls
+
+What is difference between select and Datalist?
+
+               <select> tag                                     	<datalist> tag
+The user can be restricted to a list of options.	 The user is not restricted by the list of options.
+It doesn't provide the auto-complete feature.	         It provides the auto-complete feature.
+
+what is box model ?
+In CSS, the term "box model" is used when talking about design and layout.
+The CSS box model is essentially a box that wraps around every HTML element.
+The CSS box model is a container that contains multiple properties including borders, margin, padding, and the content itself.
+
+What is position Property ?
+The position property specifies the type of positioning method used for an element.
+There are five different position values:
+-static
+-relative
+-fixed
+-absolute
+-sticky
+
+Apply diff background color for even row  in a table?
+ tr:nth-child(even) {
+            background-color: Lightgreen;
+        }
+
+
+what are pseudo elements and classes ?
+Pseudo-Class
+A pseudo-class represents a state of a selector like :hover, :active, :last-child,etc. These start with a single colon(:).
+The syntax of CSS pseudo-class is as follows −
+
+:pseudo-class{
+   attribute: /*value*/
+}
+
+Pseudo-Element
+Similarly, a pseudo-element is used to select virtual elements like ::after, ::before, ::first-line, etc.
+These start with a double colon(::).
+The syntax of CSS pseudo-element is as follows −
+
+::pseudo-element{
+   attribute: /*value*/
+}
+
+difference between margin and padding ?
+a margin is the space around an element's border, while padding is the space between an element's border and the element's content.
+Put another way, the margin property controls the space outside an element, and the padding property controls the space inside an element
+
+
+the vw (view-width) and vh (view-height) units are relational to the view-port size, where 100vw or vh is 100% of the view-port's width/height. For example, 
+if a view-port is 1600px wide,and you specify something as being 2vw, that will be the equivalent of 2% of the view-port width, or 32px.
+
+what are the units in html ? 
+absolute units
+points (1pt = 1/72 of 1in) 
+px: pixels
+cm:centemeter
+in:inch
+pc:picas(1pc = 12 pt) 
+Relative Units
+EM: Relative to the parent element
+REM: Relative to the root element (HTML tag)
+%: Relative to the parent element
+VW: Relative to the viewport’s width
+VH: Relative to the viewport’s height
+While PX, EM, and REM are primarily used for font sizing, %, VW, and VH are mostly used for margins, padding, spacing, and widths/heights.
+
+what is onload in html ?
+In JavaScript, this event can apply to launch a particular function when the page is fully loaded.
+It can also be used to verify the type and version of the visitor's browser. We can check what cookies a page uses by using the onload attribute.
+In HTML, the onload attribute fires when an object has been loaded. The purpose of this attribute is to execute a script when the associated element loads.
+In HTML, the onload attribute is generally used with the <body> element to execute a script once the content (including CSS files, images, scripts, etc.)
+of the webpage is completely loaded. It is not necessary to use it only with <body> tag, as it can be used with other HTML elements.
+
+what is window object ?
+The window object represents an open window in a browser. If a document contain frames (<iframe> tags), 
+the browser creates one window object for the HTML document, and one additional window object for each frame.
+
+
+what is DOM ?
+The Document Object Model (DOM) is a cross-platform and language-independent interface that treats an XML or HTML document as a tree structure
+wherein each node is an object representing a part of the document. The DOM represents a document with a logical tree.
+The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure,
+style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.
+
+what is CSSOM ?
+The CSS Object Model is a set of APIs allowing the manipulation of CSS from JavaScript. It is much like the DOM, but for the CSS rather than the HTML.
+It allows users to read and modify CSS style dynamically. The values of CSS are represented untyped, that is using String objects.
+
+what is hoisting in javascript ?
+In JavaScript, Hoisting is the default behavior of moving all the declarations at the top of the scope before code execution. Basically, 
+it gives us an advantage that no matter where functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local. 
+It allows us to call functions before even writing them in our code. 
+Note: JavaScript only hoists declarations, not the initializations.
+JavaScript allocates memory for all variables and functions defined in the program before execution.
+Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function).
+Variables defined with let and const are hoisted to the top of the block, but not initialized.
+Meaning: The block of code is aware of the variable, but it cannot be used until it has been declared.
+Using a let variable before it is declared will result in a ReferenceError.
+The variable is in a "temporal dead zone" from the start of the block until it is declared:
+
+WHAT IS HOISTING ? ONE LINE ANS ?
+Hoisting in JavaScript is a behavior in which a function or a variable can be used before declaration.
+
+what is meter tag in html ?
+The <meter> tag defines a scalar measurement within a known range, or a fractional value. This is also known as a gauge.
+
+what is a sementic tag in html ?
+A semantic element clearly describes its meaning to both the browser and the developer.
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content. Examples of semantic elements: <form> , <table> , and <article> - Clearly defines its content.
+
+Describe the difference between a cookie, sessionStorage and localStorage?
+For most cases, we use the localStorage object if we want some data to be on the browser.
+If we want it on the server, then we use cookies, and the sessionStorage is used when we want to destroy the data whenever that specific tab gets closed or the season is closed by the user.
+>>The main features of localStorage are:
+Shared between all tabs and windows from the same origin.
+The data does not expire. It remains after the browser restart and even OS reboot.
+>>The main features of localStorage are:
+The sessionStorage exists only within the current browser tab.
+Another tab with the same page will have a different storage.
+But it is shared between iframes in the same tab (assuming they come from the same origin).
+The data survives page refresh, but not closing/opening the tab.
+>>Both storage objects provide same methods and properties:
+setItem(key, value) – store key/value pair.
+getItem(key) – get the value by key.
+removeItem(key) – remove the key with its value.
+clear() – delete everything.
+key(index) – get the key on a given position.
+length – the number of stored items.
+
+the size of the local session and coosies ?
+The storage capacity of local storage is 5MB/10MB	
+The storage capacity of session storage is 5MB	
+The storage capacity of Cookies is 4KB
+
+All about cookies ,session storage,localstorage ?
+https://javascript.info/localstorage
+
+All about cookies ,session storage,localstorage ?
+https://www.xenonstack.com/insights/local-vs-session-storage-vs-cookie
+
+What is async and defer in js ?
+async and defer both load JavaScript asynchronously without render blocking, but async executes as soon as possible while defer runs in sequence toward the end of the loading process, just before the DOMContentLoaded event
+
+What is closure in js ?
+
+
+What is ARIA?
+ARIA is shorthand for Accessible Rich Internet Applications. ARIA is a set of attributes you can add to HTML elements that define ways to make web content and applications accessible to users with disabilities who use assistive technologies (AT). When accessibility issues cannot be managed with native HTML, ARIA can help bridge those gaps.
+
+Types of selectors in css ?
+We can divide CSS selectors into five categories:
+*Simple selectors (select elements based on name, id, class)
+*Combinator selectors (select elements based on a specific relationship between them)
+*Pseudo-class selectors (select elements based on a certain state)
+*Pseudo-elements selectors (select and style a part of an element)
+*Attribute selectors (select elements based on an attribute or attribute value)
+
+
+What are tags and attributes in html ?
+
+HTML tags are used to hold the HTML element. HTML element holds the content. HTML attributes are used to describe the characteristic of an HTML element in detail. HTML tag starts with < and ends with > Whatever written within a HTML tag are HTML elements.
+
+What is metadata in html ?
+The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data. <meta> tags always go inside the <head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.
+
+Map vs for each ?
+The main difference between map and forEach is that the map method returns a new array by applying the callback function on each element of an array, while the forEach method doesn't return anything. You can use the forEach method to mutate the source array, but this isn't really the way it's meant to be used.
+For more info:
+https://code.tutsplus.com/tutorials/javascript-map-vs-foreach-when-to-use-each-one--cms-38365
+
+What is event listener in js ?
+An event listener is a procedure in JavaScript that waits for an event to occur. The simple example of an event is a user clicking the mouse or pressing a key on the keyboard
+
+What is temporal dead zone ?
+What Exactly Is a Temporal Dead Zone in JavaScript? A temporal dead zone (TDZ) is the area of a block where a variable is inaccessible until the moment the computer completely initializes it with a value.
+
+What is HTML dom ?
+The HTML DOM is an Object Model for HTML. It defines:
+
+HTML elements as objects
+Properties for all HTML elements
+Methods for all HTML elements
+Events for all HTML elements
+The HTML DOM is an API (Programming Interface) for JavaScript:
+JavaScript can add/change/remove HTML elements
+JavaScript can add/change/remove HTML attributes
+JavaScript can add/change/remove CSS styles
+JavaScript can react to HTML events
+JavaScript can add/change/remove HTML events
+The HTML DOM (Document Object Model)
+When a web page is loaded, the browser creates a Document Object Model of the page.
+The HTML DOM model is constructed as a tree of Objects:
+
+### Display none vs visibility  hidden ?
+- Hiding an element can be done by setting the display property to none. The element will be hidden, and the page will be displayed as if the element is not there:
+visibility:hidden; also hides an element.
+However, the element will still take up the same space as before. The element will be hidden, but still affect the layout:
+
+
+### DISAPPEARING OF WWW ?
+
+Progressively, given that “http://” was always added in front or URLs typed in the browsers,
+and because treatment of“www” was correclty done,the use of “www” became less and less necessary and thus popular as part of URL.
+Developpers slowly became conscious of the possibility to give URL of their work without the “www” part,and webusers themselves,
+seing more and more of those websites without www, became conscious that they could skip it,
+helped by their natural lazyness wich was fortunately harmonized with the whole logic.
